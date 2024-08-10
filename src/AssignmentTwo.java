@@ -14,6 +14,7 @@ public class AssignmentTwo {
         Employee operator = new Employee("Famin", 20, "Male", "Oparetor", 1001);
         Ride rollerCoaster = new Ride("Roller Coaster", operator, 4);
 
+        System.out.println("Operator Details: " + operator.getName() + ", Age: " + operator.getAge() + ", Gender: " + operator.getGender() + ", Position: " + operator.getPosition() + ", Employee ID: " + operator.getEmployeeId());
         // Add 5 Visitors to the Queue
         rollerCoaster.addVisitorToQueue(new Visitor("Miccy", 25, "Female", "T1111", true));
         rollerCoaster.addVisitorToQueue(new Visitor("Bobby", 28, "Male", "T1235", false));
@@ -125,7 +126,7 @@ public class AssignmentTwo {
         newRide.readRideHistoryFromFile("rideHistory.txt");
 
         // Print the number of Visitors in the LinkedList to confirm correct import
-        System.out.println("Total riders in the reloaded ride history: " + newRide.getRideHistory().size());
+        System.out.println("Total rider in the reloaded ride history: " + newRide.getRideHistory().size());
 
         // Print all Visitors in the LinkedList to confirm details
         newRide.printRideHistory();

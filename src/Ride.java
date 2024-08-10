@@ -105,7 +105,7 @@ public class Ride implements RideInterface {
         try {
             System.out.println("Current Queue:");
             for (Visitor visitor : visitorQueue) {
-                System.out.println(visitor.getName());
+                System.out.println(visitor.getName() + " (Age: " + visitor.getAge() + ", Gender: " + visitor.getGender() + ", Ticket Number: " + visitor.getTicketNumber() + ", Season Pass: " + (visitor.hasSeasonPass() ? "Yes" : "No") + ")");
             }
         } finally {
             lock.unlock();
@@ -146,12 +146,13 @@ public class Ride implements RideInterface {
             Iterator<Visitor> iterator = rideHistory.iterator();
             while (iterator.hasNext()) {
                 Visitor visitor = iterator.next();
-                System.out.println(visitor.getName());
+                System.out.println(visitor.getName() + " (Age: " + visitor.getAge() + ", Gender: " + visitor.getGender() + ", Ticket Number: " + visitor.getTicketNumber() + ", Season Pass: " + (visitor.hasSeasonPass() ? "Yes" : "No") + ")");
             }
         } finally {
             lock.unlock();
         }
     }
+
 
     public void writeRideHistoryToFile(String filename) {
         lock.lock();
