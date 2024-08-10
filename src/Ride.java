@@ -168,7 +168,10 @@ public class Ride implements RideInterface {
             lock.unlock();
         }
     }
-
+// readRideHistoryFromFile: This method reads a file and restores the ride history.
+// It splits each line of the file into visitor details and creates a new Visitor
+// object for each entry, adding them to the ride history. It also handles errors
+// and ensures safe operation with lock
     public void readRideHistoryFromFile(String filename) {
         lock.lock();
         try {
