@@ -33,7 +33,7 @@ public class AssignmentTwo {
         // Create a new Ride object
         Employee operator = new Employee("Rocher", 35, "Female", "Operator", 1002);
         Ride waterSlide = new Ride("water slide", operator, 4);
-
+        System.out.println("Operator Details: " + operator.getName() + ", Age: " + operator.getAge() + ", Gender: " + operator.getGender() + ", Position: " + operator.getPosition() + ", Employee ID: " + operator.getEmployeeId());
         // Add Visitors to the Ride collection (LinkedList)
         waterSlide.addVisitorToQueue(new Visitor("Speed", 26, "Male", "T1239", true));
         waterSlide.addVisitorToQueue(new Visitor("Jerry", 29, "Male", "T1240", false));
