@@ -55,7 +55,7 @@ public class AssignmentTwo {
         // Create a new Ride object
         Employee operator = new Employee("Rose", 29, "Female", "Operator", 1003);
         Ride ferrisWheel = new Ride("Circle Wheel", operator, 5);
-
+        System.out.println("Operator Details: " + operator.getName() + ", Age: " + operator.getAge() + ", Gender: " + operator.getGender() + ", Position: " + operator.getPosition() + ", Employee ID: " + operator.getEmployeeId());
         // Add Visitors to the collection
         ferrisWheel.addVisitorToQueue(new Visitor("Harry", 24, "Male", "T1243", true));
         ferrisWheel.addVisitorToQueue(new Visitor("Ronny", 26, "Male", "T1244", false));
@@ -80,7 +80,7 @@ public class AssignmentTwo {
         // Create a new Ride object
         Employee operator = new Employee("Samiul", 32, "Male", "Operator", 1004);
         Ride bumperCars = new Ride("laser Fight", operator, 2);
-
+        System.out.println("Operator Details: " + operator.getName() + ", Age: " + operator.getAge() + ", Gender: " + operator.getGender() + ", Position: " + operator.getPosition() + ", Employee ID: " + operator.getEmployeeId());
         // Add Visitors to the Queue
         bumperCars.addVisitorToQueue(new Visitor("Ifty", 25, "Male", "T1248", true));
         bumperCars.addVisitorToQueue(new Visitor("Trump", 27, "Male", "T1249", false));
@@ -107,7 +107,7 @@ public class AssignmentTwo {
         // Create a new Ride object
         Employee operator = new Employee("Peter", 21, "Male", "Operator", 1005);
         Ride spiderRide = new Ride("Jumping Ride", operator, 3);
-
+        System.out.println("Operator Details: " + operator.getName() + ", Age: " + operator.getAge() + ", Gender: " + operator.getGender() + ", Position: " + operator.getPosition() + ", Employee ID: " + operator.getEmployeeId());
         // Add Visitors to the Ride
         spiderRide.addVisitorToQueue(new Visitor("Kader", 45, "Male", "T1253", true));
         spiderRide.addVisitorToQueue(new Visitor("Sakib", 40, "Male", "T1254", false));
